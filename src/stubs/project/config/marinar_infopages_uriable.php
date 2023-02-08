@@ -1,9 +1,11 @@
 <?php
 return [
     /**
-     * Number of levels for prepare uri-s
+     * Behavior when package is installed or update
+     * true - normal
+     * false - do not do anything
      */
-    'prepare_levels' => 3,
+    'install_behavior' => env('MARINAR_INFOPAGES_URIABLE_INSTALL_BEHAVIOR', env('MARINAR_INSTALL_BEHAVIOR', true)),
 
     /**
      * Behavior when package is removed from composer
@@ -12,7 +14,12 @@ return [
      * 1 - delete all, but keep the stub files and injection
      * 2 - keep everything
      */
-    'delete_behavior' => false,
+    'delete_behavior' => env('MARINAR_INFOPAGES_URIABLE_DELETE_BEHAVIOR', env('MARINAR_DELETE_BEHAVIOR', false)),
+
+    /**
+     * Number of levels for prepare uri-s
+     */
+    'prepare_levels' => 3,
 
     /**
      * File stubs that return arrays that are configurable,
