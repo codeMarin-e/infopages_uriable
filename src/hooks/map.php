@@ -29,10 +29,6 @@ return [
     implode(DIRECTORY_SEPARATOR, [ base_path(), 'app', 'Http', 'Requests', 'Admin', 'InfopageRequest.php']) => [
         "// @HOOK_INFOPAGE_REQUEST_RULES" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_RULES.php']),
         "// @HOOK_INFOPAGE_REQUEST_MESSAGES" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_MESSAGES.php']),
-        "// @HOOK_INFOPAGE_REQUEST_AFTER_VALIDATED" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_MESSAGES.php']),
-    ],
-    implode(DIRECTORY_SEPARATOR, [ base_path(), 'app', 'Http', 'Requests', 'Admin', 'InfopageRequest.php']) => [
-        "// @HOOK_INFOPAGE_REQUEST_RULES" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_RULES.php']),
-        "// @HOOK_INFOPAGE_REQUEST_MESSAGES" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_MESSAGES.php']),
+        "// @HOOK_INFOPAGE_REQUEST_AFTER_VALIDATED" => implode(DIRECTORY_SEPARATOR, [$packageDir, 'hooks', 'HOOK_INFOPAGE_REQUEST_AFTER_VALIDATED.php']),
     ],
 ];
