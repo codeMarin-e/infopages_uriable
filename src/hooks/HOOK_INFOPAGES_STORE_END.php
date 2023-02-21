@@ -1,2 +1,2 @@
 <?php
-        $chInfopage->setUri($validatedData['uri']['slug'], $validatedData['uri']['type'], $validatedData['uri']);
+        $chInfopage->setUri($validatedData['uri']['slug'], $validatedData['uri']['pointable_type'], $validatedData['uri']['attributes']);
